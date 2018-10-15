@@ -1,0 +1,51 @@
+
+Guide for Babel 7 with Node:
+
+* https://hackernoon.com/using-babel-7-with-node-7e401bc28b04
+
+RUN: 
+npm install
+
+START:
+nodemon --exec babel-node src/server.js
+or 
+npm run start
+
+
+nodemon allows the src directory to be watched and recompiled: "nodemon --exec babel-node src/server.js"
+
+npm init -y
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node
+
+
+package.json
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "build": "babel src --out-dir dist",
+    "server": "node --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "nodemon": "^1.18.4"
+  }
+}
+
+.babelrc
+{
+    "presets": ["@babel/preset-env"]
+}
+
+Build: 
+npm run-script build
