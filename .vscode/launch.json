@@ -12,7 +12,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/server.js",
+      "program": "${workspaceFolder}/src/index.js",
       /*
  * File: /Users/michaelbeeson/Documents/VSCode/algorithms/memoize/.vscode/launch.json
  */
@@ -27,7 +27,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/server.js",
+      "program": "${workspaceFolder}/src/index.js",
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/babel-node",
       "runtimeArgs": ["--nolazy"]
     }

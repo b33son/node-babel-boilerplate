@@ -1,5 +1,5 @@
 /*
- * File: /Users/michaelbeeson/Documents/VSCode/babel/src/server.js
+ * File: /Users/michaelbeeson/Documents/VSCode/babel/src/index.js
  */
 
 class Hello {
